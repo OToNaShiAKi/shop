@@ -2,11 +2,11 @@ module.exports = {
     publicPath: '/shop',
     devServer: {
         proxy: {
-            '/pay': {
-                target: "http://localhost:3000/web/xlmc",
+            '/api': {
+                target: "http://localhost:80/",
                 changeOrigin: true,
                 pathRewrite: {
-                    '^/pay': ''
+                    '^/api': ''
                 }
             }
         }

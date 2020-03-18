@@ -78,13 +78,13 @@ export const AccountLogin = (user_name, user_pwd, captcha) =>
     .catch(error);
 // 获取用户信息
 export const GetUserInfo = () =>
-  axios.get(base + "/userinfo").then(res => {
+  axios.get(base + "userinfo").then(res => {
     if (res.data.success_code == 200) return res.data.userInfo;
   });
 // 退出登录
 export const Logout = () =>
   axios
-    .get(base + "/logout")
+    .get(base + "logout")
     .then(res => {
       if (res.data.success_code == 200) return res.data.success_code;
       else throw res;

@@ -5,10 +5,8 @@ import store from './store'
 import './plugins/vant'
 import './plugins/fastclick'
 import './configs/filter'
-// import './config/rem'
 
 Vue.config.productionTip = false
-
 
 new Vue({
   router,
